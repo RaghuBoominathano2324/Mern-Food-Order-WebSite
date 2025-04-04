@@ -1,0 +1,161 @@
+.food-list-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .list-header h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+  }
+  
+  .list-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .search-input {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    min-width: 250px;
+    font-size: 0.9rem;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .refresh-button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .refresh-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .loading-state {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .list-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .table-header {
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr 1fr 100px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .table-row {
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr 1fr 100px;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+  }
+  
+  .table-row:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .food-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .category-badge {
+    background-color: #e0e0e0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .delete-btn {
+    padding: 0.4rem 0.8rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+    background: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .food-list-container {
+      padding: 1rem;
+    }
+  
+    .list-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .list-actions {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  
+    .table-header, .table-row {
+      grid-template-columns: 80px 1fr 1fr;
+    }
+  
+    .table-header div:nth-child(3),
+    .table-row div:nth-child(3) {
+      display: none;
+    }
+  
+    .food-image {
+      width: 50px;
+      height: 50px;
+    }
+  }

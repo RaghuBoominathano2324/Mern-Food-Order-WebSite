@@ -1,0 +1,93 @@
+:root {
+  /* Core Colors */
+  --primary-color: #ffd700;
+  --secondary-color: #1a1a2e;
+  --accent-color: #ff6b6b;
+  --dark-bg: #0f0f1a;
+  --darker-bg: #070711;
+  --light-text: #ffffff;
+  --gray-text: #a0a0a0;
+
+  /* Effects */
+  --glass-effect: rgba(255, 255, 255, 0.05);
+  --box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --gradient-primary: linear-gradient(45deg, #1a1a2e, #16213e);
+  --gradient-accent: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+}
+
+/* Base Styles */
+body {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+/* Section Styling */
+.section {
+  padding: 100px 0;
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Design */
+.food-card {
+  background: var(--glass-effect);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Button Styling */
+.main-btn {
+  background: var(--gradient-accent);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Typography */
+h1, h2, h3 {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+/* Counter Section */
+.counter-box {
+  background: var(--glass-effect);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: var(--glass-effect);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+  h1 { font-size: 2.5rem; }
+  .food-card { margin: 10px; }
+}

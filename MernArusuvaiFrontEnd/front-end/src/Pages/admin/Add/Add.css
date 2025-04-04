@@ -1,0 +1,123 @@
+/* General container styling */
+.add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 20px;
+}
+
+.add-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-field, .select-field, .textarea-field {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus, .select-field:focus, .textarea-field:focus {
+  border-color: #6c63ff;
+}
+
+.textarea-field {
+  resize: none;
+}
+
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-label {
+  cursor: pointer;
+  text-align: center;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.image-label:hover {
+  border-color: #6c63ff;
+  background-color: #f0f0ff;
+}
+
+.upload-preview {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-row .form-section {
+  flex: 1;
+  min-width: calc(50% - 10px);
+}
+
+.submit-btn {
+  background: #6c63ff;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background: #574dcf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-form {
+    padding: 15px;
+  }
+
+  .form-row .form-section {
+    min-width: 100%;
+  }
+}

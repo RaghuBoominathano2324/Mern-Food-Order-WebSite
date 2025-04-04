@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode {
+    background-color: #181818;
+    color: #ddd;
+  }
+  
+  /* Navbar */
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .custom-navbar.light-navbar {
+    background-color: #fff;
+  }
+  
+  .custom-navbar.dark-navbar {
+    background-color: #333;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1rem;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode .card {
+    background-color: #333;
+    color: #ddd;
+    border-color: #444;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode .button {
+    background-color: #555;
+    color: #ddd;
+  }
+  

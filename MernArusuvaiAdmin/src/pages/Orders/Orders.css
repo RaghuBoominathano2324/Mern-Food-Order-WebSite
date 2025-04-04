@@ -1,0 +1,178 @@
+.orders-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .orders-header h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+  }
+  
+  .refresh-btn {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .refresh-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .order-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .order-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+  
+  .order-number {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .order-content {
+    padding: 1rem;
+  }
+  
+  .order-items {
+    margin-bottom: 1.5rem;
+  }
+  
+  .item-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .quantity {
+    color: #7f8c8d;
+    font-weight: bold;
+  }
+  
+  .customer-details {
+    margin-bottom: 1.5rem;
+  }
+  
+  .customer-name {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .customer-address {
+    color: #7f8c8d;
+    line-height: 1.4;
+  }
+  
+  .customer-phone {
+    color: #3498db;
+    margin-top: 0.5rem;
+  }
+  
+  .order-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .amount {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .order-status {
+    margin-top: 1rem;
+  }
+  
+  .status-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .status-select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .status-food-processing {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status-out-for-delivery {
+    background-color: #cce5ff;
+    color: #004085;
+  }
+  
+  .status-delivered {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  @media (max-width: 768px) {
+    .orders-container {
+      padding: 1rem;
+    }
+  
+    .orders-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .orders-header {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  }

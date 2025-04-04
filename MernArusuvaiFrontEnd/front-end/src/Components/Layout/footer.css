@@ -1,0 +1,140 @@
+/* Global Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a modern font for the body */
+body {
+    /* font-family: 'Roboto', sans-serif; /* Modern and clean font */
+    /* background-color: #f4f7fb; Soft background color for a clean look */
+   /* color: #333; /* Darker text color for contrast */
+  /*  padding: 100px; */
+}
+
+
+
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1rem; /* More appropriate font size */
+    font-family: 'Open Sans', sans-serif; /* Clean and modern font */
+    color: #555; /* Dark gray for softer readability */
+    line-height: 1.8; /* Better readability with more spacing between lines */
+    font-weight: 400; /* Normal weight for clear text */
+    text-align: justify; /* Justify text for uniform appearance */
+    padding: 10px 0; /* Padding for spacing between lines */
+    margin-bottom: 15px; /* Add space between paragraphs */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect on paragraphs */
+p:hover {
+    color: #4caf50; /* Change color to a fresh green on hover */
+    transform: translateX(5px); /* Slight movement effect on hover */
+}
+
+/* Adjusting paragraph styles for smaller screens */
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem; /* Adjust font size for mobile devices */
+        line-height: 1.6; /* Adjust line height for better readability on small screens */
+    }
+}
+
+/* Style for links inside paragraphs */
+p a {
+    color: #007bff; /* A soft blue color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+p a:hover {
+    color: #28a745; /* Change link color to green on hover */
+}
+
+/* Add a subtle background and padding to paragraphs */
+p {
+    background-color: #fff; /* White background for paragraphs */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside paragraphs */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Use modern font for headings */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745; /* Green background for buttons */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Adequate padding */
+    font-size: 1rem; /* Medium font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green when hovering */
+    transform: translateY(-3px); /* Slight movement on hover */
+}
+
+/* Card-like container for better structure */
+.container {
+    background-color: #ffffff; /* White background for container */
+    padding: 30px; /* Padding inside container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin: 20px 0; /* Margin between containers */
+}
+
+/* Links in container */
+.container a {
+    color: #007bff; /* Soft blue color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+/* Additional Styling for Footer */
+footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #f8f9fa; /* Light text color */
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #f8f9fa; /* Light text for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #28a745; /* Change to green on hover */
+}

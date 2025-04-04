@@ -1,0 +1,175 @@
+.custom-navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffd700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 4px solid #ff8c00;
+  transition: all 0.3s ease;
+  opacity: 0.95;
+}
+
+/* Navigation Sections */
+.navbar-section {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: rgba(255, 140, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Icon Styles */
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background: #fff3e0; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  background: #ff8c00;
+  transform: scale(1.1);
+}
+
+.icon-wrapper i {
+  font-size: 1.2rem;
+  color: #ff8c00;
+  transition: color 0.3s ease;
+}
+
+.icon-wrapper:hover i {
+  color: white;
+}
+
+/* Logo Styles */
+.logo-wrapper {
+  width: 80px;
+  height: 80px;
+  perspective: 1000px;
+  z-index: 1100;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff8c00;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Cart Count */
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Theme Modes */
+.custom-navbar.light-navbar {
+  background-color: #fff;
+  color: #333;
+}
+
+.custom-navbar.dark-navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 0 1rem;
+    height: auto;
+  }
+
+  .navbar-section {
+    gap: 1rem;
+  }
+
+  .logo-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .navbar-section {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.auth-button {
+  position: relative;
+  z-index: 1000;
+}
+
+.auth-button button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}

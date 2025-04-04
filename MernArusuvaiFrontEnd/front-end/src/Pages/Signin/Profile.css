@@ -1,0 +1,180 @@
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-popup-container {
+  background: white;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 1000px;
+  min-height: 600px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-form-section {
+  flex: 1;
+  padding: 40px;
+  /* background: #ffffff; */
+}
+
+.login-image-section {
+  flex: 1;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.login-popup-title h2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.login-popup-title img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.login-popup-title img:hover {
+  transform: rotate(90deg);
+}
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-popup-inputs input {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.login-popup-inputs input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1);
+}
+
+.login-popup-inputs button {
+  background: #ff6b6b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-popup-inputs button:hover {
+  background: #ff5252;
+}
+
+.login-popup-condition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.login-popup-condition input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff6b6b;
+}
+
+.login-popup-condition p {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-role-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff6b6b;
+  border-radius: 8px;
+  background: transparent;
+  color: #ff6b6b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-btn:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+.food-carousel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.carousel-content {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-content h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.carousel-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-popup-container {
+      flex-direction: column;
+      width: 95%;
+      max-height: 90vh;
+      overflow-y: auto;
+  }
+
+  .login-image-section {
+      display: none;
+  }
+
+  .login-form-section {
+      padding: 20px;
+  }
+}
