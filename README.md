@@ -8,9 +8,9 @@ This platform is perfect for beginners and aspiring full-stack developers to gai
 
 
 
-#⚙️ Core Functionality
+###⚙️ Core Functionality
 
-   #👤 User Features
+   👤 User Features
    Secure user registration and login
 
    Browse food items with clear, high-quality images
@@ -23,7 +23,7 @@ This platform is perfect for beginners and aspiring full-stack developers to gai
 
    Instant confirmation messages for placed or canceled orders
 
-     #🛠️ Admin Features
+     🛠️ Admin Features
        Separate login panel for admins
        Add, edit, or delete menu items
        Track and manage incoming orders
