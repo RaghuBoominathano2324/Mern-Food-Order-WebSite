@@ -1,13 +1,14 @@
-🍽️ Arusuvai – Modern Food Ordering Platform
+######🍽️ Arusuvai – Modern Food Ordering Platform
 
 # 🧾 Overview
 Arusuvai is a full-stack Food Ordering Web Application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Designed as a capstone project, it brings together key web development concepts like user authentication, data management, and real-time functionality.
 
 This platform is ideal for beginners and aspiring full-stack developers to gain practical experience in building real-world applications—from designing APIs to integrating frontend and backend systems.
 
-⚙️ Core Functionality
 
-   👤 User Features
+####⚙️ Core Functionality
+
+   #👤 User Features
    Secure user registration and login
 
    Browse food items with clear, high-quality images
@@ -20,27 +21,27 @@ This platform is ideal for beginners and aspiring full-stack developers to gain 
 
    Instant confirmation messages for placed or canceled orders
 
-   🛠️ Admin Features
+     #🛠️ Admin Features
        Separate login panel for admins
        Add, edit, or delete menu items
        Track and manage incoming orders
        Update content and monitor basic platform activity
        
- 🧱 Technical Architecture
+## 🧱 Technical Architecture
  
-     🔐 Security Highlights
+     #🔐 Security Highlights
          Authentication system for both users and admins
          Passwords protected using bcrypt
          Backend validation using Joi
          Sessions handled securely with JWT tokens
          Data stored safely in MongoDB
          
-      📦 Order System Overview
+     # 📦 Order System Overview
           Menu display with images to enhance user experience
           Track food inventory and manage availability
           Simple order cancellation through hyperlinks
         
-      🧑‍💼 Technology Stack
+      #🧑‍💼 Technology Stack
           Layer	Tools & Technologies
           Frontend	React.js, HTML5, CSS3, React Router, Toastify
           Backend	Node.js, Express.js
@@ -48,7 +49,7 @@ This platform is ideal for beginners and aspiring full-stack developers to gain 
           Security	bcrypt, JWT, Joi
           Middleware	body-parser, cors
 
-      🌱 Perfect for Beginner
+      #🌱 Perfect for Beginner
           This project is a great starting point for anyone learning full-stack development. It teaches:
            How to connect frontend and backend using APIs
            How authentication systems work
