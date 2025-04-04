@@ -1,12 +1,12 @@
-######🍽️ Arusuvai – Modern Food Ordering Platform
+#🍽️ Arusuvai – Modern Food Ordering Platform
 
-# 🧾 Overview
+#🧾 Overview
 Arusuvai is a full-stack Food Ordering Web Application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Designed as a capstone project, it brings together key web development concepts like user authentication, data management, and real-time functionality.
 
 This platform is ideal for beginners and aspiring full-stack developers to gain practical experience in building real-world applications—from designing APIs to integrating frontend and backend systems.
 
 
-####⚙️ Core Functionality
+#⚙️ Core Functionality
 
    #👤 User Features
    Secure user registration and login
@@ -27,7 +27,7 @@ This platform is ideal for beginners and aspiring full-stack developers to gain 
        Track and manage incoming orders
        Update content and monitor basic platform activity
        
-## 🧱 Technical Architecture
+# 🧱 Technical Architecture
  
      #🔐 Security Highlights
          Authentication system for both users and admins
