@@ -65,7 +65,7 @@ By building this project, you gain hands-on experience with:
 - Secure user authentication
 - CRUD operations and data management
 - API integration and route protection
-This project is perfect for showcasing your skills on your resume or portfolio. Whether you're just starting out or looking to expand your skills further, **Arusuvai** provides a strong foundation for your full-stack development journey.
+
     
 
 
